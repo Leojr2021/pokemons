@@ -1,23 +1,38 @@
+const { json } = require('body-parser');
 const mongodb = require('../data/database');
 const ObjectId = require('mongodb').ObjectId;
 
 const getAll = async(req,res) =>{
     //#swagger.tags=['Pokemons']
     const result = await mongodb.getDatabase().db().collection('pokedex').find();
-    result.toArray().then((pokedex)=>{
+    // result.toArray().then((pokedex)=>{
+    //     res.setHeader('Content-Type', 'application/json');
+    //     res.status(200).json(pokedex);
+    // });
+    result.toArray((err, pokedex) =>{
+        if(err){
+            res.status(400).json({message: err});
+        }
         res.setHeader('Content-Type', 'application/json');
         res.status(200).json(pokedex);
-    });
+    })
 };
 
 const getSingle = async(req,res) =>{
      //#swagger.tags=['Pokemons']
     const pokemonId= new ObjectId(req.params.id);
     const result = await mongodb.getDatabase().db().collection('pokedex').find({ _id:pokemonId});
-    result.toArray().then((pokedex)=>{
+    // result.toArray().then((pokedex)=>{
+    //     res.setHeader('Content-Type', 'application/json');
+    //     res.status(200).json(pokedex[0]);
+    // });
+    result.toArray((err, pokedex) =>{
+        if(err){
+            res.status(400).json({message: err});
+        }
         res.setHeader('Content-Type', 'application/json');
         res.status(200).json(pokedex[0]);
-    });
+    })
 };
 
 const createPokemon = async (req, res) =>{  
