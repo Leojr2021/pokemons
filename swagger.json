@@ -12,16 +12,7 @@
     
   ],
   "paths": {
-    "/api-docs": {
-      "get": {
-        "description": "",
-        "responses": {
-          "default": {
-            "description": ""
-          }
-        }
-      }
-    },
+   
     "/pokemons/": {
       "get": {
         "tags": [
@@ -72,6 +63,9 @@
                 },
                 "image": {
                   "example": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/150.png"
+                },
+                "pokedexNumber": {
+                  "example": "100"
                 }
               }
             }
@@ -154,6 +148,9 @@
                 },
                 "image": {
                   "example": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/150.png"
+                },
+                "pokedexNumber": {
+                  "example": "100"
                 }
               }
             }
