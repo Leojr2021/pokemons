@@ -53,25 +53,25 @@
               "type": "object",
               "properties": {
                 "pokemonname": {
-                  "example": "any"
+                  "example": "Mewtwo"
                 },
                 "type": {
-                  "example": "any"
+                  "example": "psychic"
                 },
                 "HP": {
-                  "example": "any"
+                  "example": "300"
                 },
                 "Attack": {
-                  "example": "any"
+                  "example": "50"
                 },
                 "Defense": {
-                  "example": "any"
+                  "example": "50"
                 },
                 "speed": {
-                  "example": "any"
+                  "example": "99"
                 },
                 "image": {
-                  "example": "any"
+                  "example": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/150.png"
                 }
               }
             }
@@ -135,25 +135,25 @@
               "type": "object",
               "properties": {
                 "pokemonname": {
-                  "example": "any"
+                  "example": "Mewtwo"
                 },
                 "type": {
-                  "example": "any"
+                  "example": "psychic"
                 },
                 "HP": {
-                  "example": "any"
+                  "example": "300"
                 },
                 "Attack": {
-                  "example": "any"
+                  "example": "50"
                 },
                 "Defense": {
-                  "example": "any"
+                  "example": "50"
                 },
                 "speed": {
-                  "example": "any"
+                  "example": "99"
                 },
                 "image": {
-                  "example": "any"
+                  "example": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/150.png"
                 }
               }
             }
