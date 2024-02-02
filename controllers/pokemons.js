@@ -96,7 +96,7 @@ const getSingle = async (req, res) => {
 const createPokemon = async (req, res) => {
   //#swagger.tags=['Pokemons']
   const pokemon = {
-    pokemonname: req.body.pokemonname,
+    name: req.body.name,
     type: req.body.type,
     HP: req.body.HP,
     Attack: req.body.Attack,
@@ -125,7 +125,7 @@ const updatePokemon = async (req, res) => {
   }
   const pokemonId = new ObjectId(req.params.id);
   const pokemon = {
-    pokemonname: req.body.pokemonname,
+    name: req.body.name,
     type: req.body.type,
     HP: req.body.HP,
     Attack: req.body.Attack,

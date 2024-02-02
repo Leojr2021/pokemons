@@ -3,7 +3,7 @@ const validator = require('../helpers/validate');
 const savePokemon = (req, res, next) => {
   const validationRule = {
   
-    pokemonname: 'required|string',
+    name: 'required|string',
     type: 'required|string',
     HP: 'integer',
     Attack: 'integer',
